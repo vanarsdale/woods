@@ -1,0 +1,219 @@
+/*
+	@theme Outside
+	@override-placeholders html, css, js, php
+*/
+
+@base {
+	color: #fff;
+	background-color: #323232;
+	insertion-point-color: #fff;
+	selection-background-color: #777;
+}
+
+tag, source, sourcecode {
+	spell-check: disabled;
+}
+
+tag, tag > string > punctuation {
+	oldcolor: #8FCFFF;
+	lessoldcolor: #9FDFFF;
+	color: #9c0;
+}
+
+tag > name, tag > string.quoted - punctuation, attribute-with-value > string.quoted - punctuation {
+	oldcolor: #2F5F7F;
+}
+
+tag > punctuation.definition.begin, tag > punctuation.definition.end {
+	color: #96cbed;
+}
+
+tag>name {
+	color: #9bcdfe;
+	background-color: transparent;
+}
+
+attribute-name, punctuation.definition.tag {
+	color: #ffd7ab;
+	newcolor: #6FBFFF;
+}
+
+tag > string.quoted, tag > attribute-with-value > string.quoted {
+	color: #9c0;
+	background-color: #transparent; /* FIXME */
+}
+
+tag > string > punctuation {
+	font-weight: normal;
+}
+
+css.embedded attribute-name, css.embedded punctuation.definition.tag {
+	color: #AAD3FD;
+}
+
+comment, comment>punctuation, tag.doctype, tag.doctype > *, tag.doctype > string.quoted {
+	color: #8b8b8b;
+	font-weight: normal;
+}
+
+tag.h1, tag.h1 * {
+	font-weight: bold;
+	color: #fff;
+}
+
+
+latex.function function - parameter, latex.keyword {
+	color: #699d36;
+}
+
+string.quoted-alt {
+	bluecolor: #1a93ae;
+	bluebackground-color: #f4f9fe;
+	color: #1aa1a1;
+	background-color: rgba(235,252,254,0.5);
+}
+
+string.quoted {
+	color: #bc670f;
+	background-color: rgba(251,233,173,0.1);
+}
+
+string.quoted > punctuation {
+	bluecolor: #5ecae9;
+	color: #e69a4c;
+}
+
+string.quoted > escape {
+	font-weight: bold;
+	background-color: rgba(251,233,173,0.8);
+}
+
+variable {
+	color: #7b8c4d;
+}
+
+variable>punctuation {
+	color: #865fdb;
+}
+
+operator {
+	color: #626fc9;
+}
+
+open-bracket, close-bracket {
+}
+
+support.function, function-call {
+	color: #c3c2fe;
+	font-weight: boldd;
+}
+
+keyword.control, storage.type {
+	color: #c3c2fe;
+}
+
+function > name {
+	color: #9c0;
+	font-weight: bold;
+}
+
+constant.numeric, constant.language {
+	color: #1a1a1a;
+	background-color: #9c0;
+}
+
+invalid {
+	background-color: #f93232;
+	color: #f9f2ce;
+}
+
+textile > header {
+	font-weight: bold;
+}
+
+
+/* JavaScript
+-------------------------------------------------------------- */
+
+storage.type.js, support.function.js {
+	color: #cfcb90;
+}
+
+string.quoted.double.js {
+	color: #d183ad;	
+}
+
+keyword.control.js {
+	color: #7bc8fe;
+}
+
+variable.language.js {
+	color: #c6c5fe;
+}
+
+keyword.operator.js {
+	color: #fff;
+}
+
+keyword.operator.new.js {
+	color: #fff;
+}
+
+entity.name.type.instance.js {
+	color: #ffffb6;
+	text-decoration: underline;
+}
+
+string.regex.js, constant.character.escape.js {
+    color: #d27e00;	
+}
+
+punctuation.definition.string.begin.js, punctuation.definition.string.end.js {
+	color: #d183ad;
+}
+
+string.quoted.single.js {
+	color: #ffa1ca;
+}
+
+/* CSS
+------------------------------------------------------------- */
+
+selector.css { 
+    color: #96cbf3;
+}
+
+css property-list > property-value { color:#f9ee98; }
+css property-list > property-name { color:#fff; }
+
+/* PHP
+------------------------------------------------------------- */
+
+keyword.definition.php {
+	color: #fff;
+}
+
+keyword.control.flow {
+	color: #96c8d1;
+}
+
+delimiter.balanced.parenthesis.begin,
+delimiter.balanced.parenthesis.end {
+	color: #fff;
+}
+
+identifier.variable.local {
+	color: #c3c2fe;
+}
+
+literal.string.quoted, literal.numeric {
+    color: #9c0;
+}
+
+operator {
+	color: #fff;
+}
+
+identifier.function.support_mysql > delimiter.balanced.parenthesis.begin, identifier.function.support.math > delimiter.balanced.parenthesis.begin {
+	color: #cfcb90;
+}
